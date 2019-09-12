@@ -15,9 +15,7 @@ For teachers to store mark realated info about their students.
 - Report card comments
 
 # Product Backlog
-<<<<<<< HEAD
-* Hello World
-=======
+
 - Set up env
 - Figure out data representation
     - Students
