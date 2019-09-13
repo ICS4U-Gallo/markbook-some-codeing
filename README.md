@@ -11,7 +11,6 @@ The program will include the following topics:
 - Functions
 - Test suite using `Pytest`
 
-<<<<<<< HEAD
 
 ## Setup
 ### Accept GitHub Classroom Assignment
@@ -29,6 +28,3 @@ Have each person on the team make a change and push it to GitHub.
 
 
 - Create a GitHub project board with the product backlog items in `product_backlog.md`.
-=======
-up date
->>>>>>> 6712d416fdea12a64990930668a9507e5745b239
