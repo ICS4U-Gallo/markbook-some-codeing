@@ -1,2 +1,1 @@
 # Product Backlog
-* Hello World
