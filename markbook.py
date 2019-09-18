@@ -4,6 +4,25 @@ Group members:
 """
 from typing import Dict
 
+student = {
+  "student": "",
+  "classroom": "" ,
+  "kwargs": ""
+}
+
+class_room = {
+  "course_code": "",
+  "course_name": "",
+  "period": "",
+  "teacher": ""
+}
+
+assignments = {
+  "name": "",
+  "due": "",
+  "points": "" 
+}
+
 
 def create_assignment(name: str, due: str, points: int) -> Dict:
     """Creates an assignment represented as a dictionary
