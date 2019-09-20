@@ -28,3 +28,29 @@ Have each person on the team make a change and push it to GitHub.
 
 
 - Create a GitHub project board with the product backlog items in `product_backlog.md`.
+
+#OOP框架
+##Class Student
+- 提取基本信息（建立，get，set，课程名称）
+- 一个课程所有分数
+  - 该课程平均分（去掉最低分）
+- 所有"作业"分数
+##Class Classroom
+- 提取基本信息（建立，get，set，课程名称）
+- 学生列表（add and remove)，作业列表
+  - 该课程平均分（去掉最低分）
+- 总平均分
+- 单个作业平均分+单个作业所有学生成绩
+- 多个作业平均分排序（alpha or value)
+- 更新某个学生的某个"作业"分数
+
+##Class Assignment
+- 基本信息
+
+##E.g
+Math： A1，A2，A3 
+Physics：A1，A2
+CS：A1
+
+#User Interface
+##...
