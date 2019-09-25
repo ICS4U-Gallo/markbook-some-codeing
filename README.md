@@ -36,7 +36,7 @@ Have each person on the team make a change and push it to GitHub.
   - 该课程平均分（去掉最低分）
 - 所有"作业"分数
 ##Class Classroom
-- 提取基本信息（建立，get，set，课程名称）
+- 提取基本信息（建立，get，set，课程名称, comment）
 - 学生列表（add and remove)，作业列表
   - 该课程平均分（去掉最低分）
 - 总平均分
