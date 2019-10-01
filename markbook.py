@@ -1,6 +1,6 @@
 """
 Markbook Application
-Group members: 
+Group members: Yingchen Ma, Charlie Guo, Simon Li
 """
 from typing import Dict
 from tkinter import *
