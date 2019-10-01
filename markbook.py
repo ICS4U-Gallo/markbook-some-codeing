@@ -6,7 +6,7 @@ from typing import Dict
 from tkinter import *
 from tkinter import simpledialog
 from tkinter import filedialog
- 
+
 
 class Student:
     def __init__(self, first_name, last_name, gender, image, student_number, grade, email, comments):
@@ -118,6 +118,7 @@ class Classroom:
 
     def __repr__(self):
         return self.get_course_code()
+
     def get_course_code(self):
         """
         Return the course code
@@ -270,71 +271,63 @@ class Classroom:
 def reverse_dict(d):
     new_d = {}
     for key in d:
-        if d[key] not in d:
+        if d[key] not in new_d:
             new_d[d[key]] = []
         new_d[d[key]].append(key)
     return new_d
 
 
-
-
-
-    
 if __name__ == "__main__":
-    
-    #5成功
+
     def chuangjian1cgpg():
-        
+
         global root20
         root20=Tk()
-        
+
         root20.title("You are set")
         root20.geometry("240x320")
         root20.resizable(width=True,height=True)
 
-        #标签   
+        #标签
         L_title=Label(root20,text='success')
         L_title.config(font='Helvetica -20 bold',fg='blue')
         L_title.place(x=50,y=100,anchor="center")
 
 
-    #4创建课堂
+    #Create Classroom
     def chuangjian1pg():
-        
+
         global root10
         root10=Tk()
-        
+
         root10.title("creat class")
         root10.geometry("480x640")
         root10.resizable(width=True,height=True)
 
-        #创建课堂   
+        #Create Class
         L_title=Label(root10,text='Creat a course')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=50,y=10,anchor="center")
-        #课程号
+        #Course Code
         L_title=Label(root10,text='course code')
         L_title.config(font='Helvetica -15 bold',fg='red')
         L_title.place(x=70,y=50,anchor="center")
-        #输入按钮
+        #Input
         course_code =Entry(root10)
-        #输入框赋值在course_code变量
         course_code.pack(padx =100,pady =30)
-        #课程名
+        #Course Name
         L_title=Label(root10,text='course name')
         L_title.config(font='Helvetica -15 bold',fg='red')
         L_title.place(x=50,y=100,anchor="center")
-        #输入按钮
+        #Input
         course_name =Entry(root10)
-        #输入框赋值在course_name变量
         course_name.pack(padx =100,pady =5)
-        #老师名
+        #teacher name
         L_title=Label(root10,text='teacher name')
         L_title.config(font='Helvetica -15 bold',fg='red')
         L_title.place(x=50,y=150,anchor="center")
-        #输入按钮
+        #Input
         teacher_name =Entry(root10)
-        #输入框赋值在teacher_name变量
         teacher_name.pack(padx =100,pady =30)
         #科目位置
         L_title=Label(root10,text='period')
@@ -353,7 +346,7 @@ if __name__ == "__main__":
 
     #6课堂作业添加
     def ketangzytjpg():
-        
+
         global root31
         root31=Tk()
 
@@ -388,7 +381,7 @@ if __name__ == "__main__":
         due =Entry(root31)
         #输入框赋值在due变量
         due.pack(padx =150,pady =50)
-        
+
         Assignment(name, points, due)
         #继续按钮
         B_18 = Button(root31,text="next",command=chuangjian1cgpg)
@@ -397,7 +390,7 @@ if __name__ == "__main__":
 
     #6课堂作业删除
     def ketangzyscpg():
-        
+
         global root44
         root44=Tk()
 
@@ -420,14 +413,14 @@ if __name__ == "__main__":
 
     #6课堂作业信息
     def ketangzyxxpg():
-        
+
         global root32
         root32=Tk()
 
         root32.title("homework info")
         root32.geometry("640x480")
         root32.resizable(width=True,height=True)
-        #课堂作业信息 
+        #课堂作业信息
         L_title=Label(root32,text='assignment info')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=150,y=20,anchor="center")
@@ -488,7 +481,7 @@ if __name__ == "__main__":
         #输入框赋值在e变量
         g5.pack(padx =150,pady =1)
         #继续（添加移除）按钮
-       
+
         B_37 = Button(root71,text="add",command=chuangjian1cgpg)
         B_37.place(x=150,y=500)
         root71.mainloop()
@@ -548,21 +541,21 @@ if __name__ == "__main__":
         root36.title("student mark info")
         root36.geometry("640x480")
         root36.resizable(width=True,height=True)
-        #管理学生分数   
+        #管理学生分数
         L_title=Label(root36,text='mark info')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=150,y=20,anchor="center")
 
     #6课堂作业分数管理
     def ketangzyfsglpg():
-        
+
         global root61
         root61=Tk()
 
         root61.title("assment mark mani")
         root61.geometry("640x480")
         root61.resizable(width=True,height=True)
-        #管理作业 
+        #管理作业
         L_title=Label(root61,text='manage assignment mark')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=150,y=20,anchor="center")
@@ -579,14 +572,14 @@ if __name__ == "__main__":
 
     #5课堂作业
     def ketangzypg():
-        
+
         global root21
         root21=Tk()
 
         root21.title("class assment")
         root21.geometry("640x480")
         root21.resizable(width=True,height=True)
-        #管理作业 
+        #管理作业
         L_title=Label(root21,text='manage assignment')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=150,y=20,anchor="center")
@@ -606,7 +599,7 @@ if __name__ == "__main__":
 
     #6课堂学生添加
     def ketangxstjpg():
-        
+
         global root35
         root35=Tk()
 
@@ -643,22 +636,22 @@ if __name__ == "__main__":
         root36.title("class student info")
         root36.geometry("640x480")
         root36.resizable(width=True,height=True)
-        #管理学生   
+        #管理学生
         L_title=Label(root36,text='student list')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=150,y=20,anchor="center")
-        
+
 
     #5课堂学生
     def ketangxspg():
-        
+
         global root22
         root22=Tk()
 
         root22.title("student in class")
         root22.geometry("640x480")
         root22.resizable(width=True,height=True)
-        #管理学生   
+        #管理学生
         L_title=Label(root22,text='manage student')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=150,y=20,anchor="center")
@@ -668,18 +661,18 @@ if __name__ == "__main__":
         #课堂学生显示
         B_42 = Button(root22,text="student list",command=ketangxsxspg)
         B_42.place(x=130,y=300)
-        
+
 
     #4课堂管理
     def guanli1pg():
-        
+
         global root11
         root11=Tk()
 
         root11.title("class mani")
         root11.geometry("640x480")
         root11.resizable(width=True,height=True)
-        #课堂管理   
+        #课堂管理
         L_title=Label(root11,text='manage')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=150,y=20,anchor="center")
@@ -689,7 +682,7 @@ if __name__ == "__main__":
         #课堂学生选项
         B_31 = Button(root11,text="student",command=ketangxspg)
         B_31.place(x=130,y=300)
-        
+
 
 
     #4课程信息
@@ -697,7 +690,7 @@ if __name__ == "__main__":
 
         global root12
         root12=Tk()
-        
+
         root12.title("class info")
         root12.geometry("1280x720")
         root12.resizable(width=True,height=True)
@@ -705,7 +698,7 @@ if __name__ == "__main__":
         L_title=Label(root12,text='info')
         L_title.config(font='Helvetica -20 bold',fg='blue')
         L_title.place(x=50,y=50,anchor="center")
-        #课程名   
+        #课程名
         L_title=Label(root12,text='course name:')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=100,y=200,anchor="center")
@@ -719,13 +712,11 @@ if __name__ == "__main__":
         L_title.place(x=100,y=600,anchor="center")
         root12.mainloop()
         ketangx1pg()
-        
-        
 
-        
+
     #2第一页（课堂，学生）
     def xuanxiang1pg():
-        
+
         global root0
         root0=Tk()
         root0.title("class,student")
@@ -748,12 +739,12 @@ if __name__ == "__main__":
     def ketangx1pg():
         global root1
         root1=Tk()
-        
+
         root1.title("class option")
         root1.geometry("240x320")
         root1.resizable(width=True,height=True)
 
-        #标签   
+        #标签
         L_title=Label(root1,text='Please select')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=60,y=10,anchor="center")
@@ -766,12 +757,12 @@ if __name__ == "__main__":
         #课程信息
         B_13 = Button(root1,text="info",command=xinxi1pg)
         B_13.place(x=40,y=180)
-        
+
         root1.mainloop()
 
     #4课堂学生添加
     def chuangjiansxpg():
-        
+
         global root46
         root46=Tk()
         root46.title("add student")
@@ -847,11 +838,11 @@ if __name__ == "__main__":
     def xsxxipg():
         global root2
         root69=Tk()
-        
+
         root69.title("student info")
         root69.geometry("640x480")
         root69.resizable(width=True,height=True)
-        #标签   
+        #标签
         L_title=Label(root69,text='student info')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=60,y=10,anchor="center")
@@ -890,11 +881,11 @@ if __name__ == "__main__":
     def xszyxxpg():
         global root2
         root76=Tk()
-        
+
         root76.title("Homework")
         root76.geometry("640x480")
         root76.resizable(width=True,height=True)
-        #标签   
+        #标签
         L_title=Label(root76,text='assignment info')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=60,y=10,anchor="center")
@@ -902,12 +893,12 @@ if __name__ == "__main__":
     #5学生评论
     def xsplpg():
         root77=Tk()
-        
+
         root77.title("Mean comment")
         root77.geometry("640x480")
         root77.resizable(width=True,height=True)
-        #标签   
-       
+        #标签
+
         L_title=Label(root77,text='comment')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=60,y=10,anchor="center")
@@ -916,11 +907,11 @@ if __name__ == "__main__":
     def ketangx3pg():
         global root2
         root39=Tk()
-        
+
         root39.title("student manege")
         root39.geometry("640x480")
         root39.resizable(width=True,height=True)
-        #标签   
+        #标签
         L_title=Label(root39,text='Please select')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=60,y=10,anchor="center")
@@ -934,17 +925,17 @@ if __name__ == "__main__":
         B_13 = Button(root39,text="comment",command=xsplpg)
         B_13.place(x=40,y=180)
         root39.mainloop()
-    
+
     #3学生选项
     def ketangx2pg():
-        
+
         global root2
         root38=Tk()
-        
+
         root38.title("Student")
         root38.geometry("640x480")
         root38.resizable(width=True,height=True)
-        #标签   
+        #标签
         L_title=Label(root38,text='Please select')
         L_title.config(font='Helvetica -15 bold',fg='blue')
         L_title.place(x=60,y=10,anchor="center")
@@ -966,19 +957,19 @@ if __name__ == "__main__":
         a_len=len(myAccount)
         p_len=len(myPassword)
         if  myAccount=="a" and myPassword=="a":
-            msg_label["text"]="well down"
+            msg_label["text"]="well done"
             xuanxiang1pg()
 
-            
-            
+
+
         elif myAccount=="a" and myPassword!="a":
-            msg_label["text"]="password errow"
+            msg_label["text"]="password error"
             p_entry.delete(0,p_len)
         else:
-            msg_label["text"]="name errow"
+            msg_label["text"]="name error"
             a_entry.delete(0,a_len)
             p_entry.delete(0,p_len)
-    
+
     #1初始界面
     root=Tk()
     root.geometry("320x240")
