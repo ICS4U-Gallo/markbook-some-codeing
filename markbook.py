@@ -5,6 +5,7 @@ Group members: Yingchen Ma, Charlie Guo, Simon Li
 from typing import Dict
 from tkinter import *
 
+
 class Student:
     def __init__(self, first_name, last_name, gender, image, student_number,
                  grade, email, comments):
